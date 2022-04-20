@@ -1,0 +1,38 @@
+<div class="login-containor">
+  <img class="film" src="assets\images\film1.jpeg" alt="" />
+  <div class="logo">Rotten Potatoes</div>
+  <div class="desc">
+    Potato, Solanum tuberosum, is an herbaceous perennial plant in the family
+    Solanaceae which is grown for berries. The potato tubers grow underground
+    and generally located in the top 25 cm (10 in) of the soil. The tubers can
+    range in color from yellow to red or purple depending on the variety. Potato
+    plants can reach in excess of 1 m (3.3 ft) in height and are grown as annual
+    plants, surviving only one growing season. Potato may also be referred to
+    as, spud, Irish potato, white potato or Spanish potato and originates from
+    South America.
+  </div>
+  <div class="login-form">
+    <label for="uname">Username</label>
+    <input
+      type="text"
+      name="uname"
+      class="form-control"
+    [(ngModel)]="username"
+      
+    />
+    <div class="from-group">
+      <label for="pass">Password</label>
+      <input
+        type="password"
+        name="pass"
+        class="form-control"
+        [(ngModel)]="password" 
+        
+      />
+    </div>
+    <div class="btn-containor">
+      <div class="error">{{ errorMsg }}</div>
+      <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
